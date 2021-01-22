@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Site with Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS  -->
+    <link rel="stylesheet " href="./css/normalize.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css " integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2
+        " crossorigin="anonymous ">
+
+</head>
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
+        <a class="navbar-brand " href="# ">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg " width="30 " height="30
+        " class="d-inline-block align-top " alt=" " loading="lazy "> Sprint 2
+        </a>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
+            <ul class="navbar-nav ">
+                <li class="nav-item active ">
+                    <a class="nav-link " href="#">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#services">Servicios</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#news">Noticias</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#team">Equipo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" height="400px" src="./img/carousel/skyscrapers-5838029_1280.jpg" alt="img-carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" height="400px" src="./img/carousel/fire-4892711_1920.jpg" alt="img-carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" height="400px" src="./img/carousel/guanajuato-5838206_1920.jpg" alt="img-carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+<!-- services -->
+<div id="services" class="container-fluid bg-secondary mt-2">
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-6 col-xs-12 col-lg-4 mt-3">
+            
+                <div class="card">
+                        <div class="d-flex justify-content-center p-2 bg-dark">
+
+                                <img src="./img/servicios/htmll.png" alt="img-services">
+                            </div>
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto</p>
+                        <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-4 mt-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center p-2 bg-dark">
+                        <img src="./img/servicios/js.png" alt="img-services">
+                    </div>
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title">JS</h5>
+                        <p class="card-text">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                        <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-4 mt-3 mb-3">
+                    <div class="card">
+                            <div class="d-flex justify-content-center p-2 bg-dark">
+
+                                    <img src="./img/servicios/csss.png" alt="img-services">
+                                </div>
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">CSS</h5>
+                                <p class="card-text">El lenguaje CSS es un lenguaje que determina el estilo de los documentos HTML. Abarca opciones relativas a fuentes, colores, márgenes, líneas, altura, anchura, imágenes de fondo, entre otros.</p>
+                                <a href="#" class="btn btn-primary">Ver mas</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+<!-- news -->
+    <div id="news" class="container-fluid bg-light" >
+        <div class="row mt-md-5 mt-sm-5 mt-xs-5">
+            <div class="col-lg-6 col-xs-12">
+                <div class="d-flex justify-content-center align-items-center">
+    
+                    <div class="p-3">
+                        <img src="./img/noticias/apple.png" alt="img-news">
+                    </div>
+    
+                    <div class="p-2">
+                        <h3>Apple podría pagar mas de mil millones de dólares a VirnetX</h3>
+                        <p>
+                            En enero de 2020 se volvió a apelar pero sólo un mes después se determinó que no había lugar para las apelaciones y que por tanto se debía continuar con el proceso y Apple debería indemnizar a VirnetX  por la infracción de patentes.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="d-flex container-fluid justify-content-end pb-2 mt-n2">
+                    <button type="button" class="btn btn-outline-info">Leer mas</button>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-xs-12">
+                <div class="d-flex justify-content-center align-items-center">
+    
+                    <div class="p-3">
+                        <img width="200px" height="250px" src="./img/noticias/java.png" alt="img-news">
+                    </div>
+    
+                    <div class="p-2">
+                        <h3>Oracle anuncia el lanzamiento de Java 14</h3>
+                        <p>
+                            Oracle acaba de lanzar Java 14. En concreto, ha presentado JDK 14, su implementación de referencia de la especificación Java 14, que sigue siendo uno de los lenguajes de programación favoritos de los desarrolladores.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="d-flex container-fluid justify-content-end pb-2 mt-n2">
+                    <button type="button" class="btn btn-outline-info">Leer mas</button>
+                </div>
+            </div>
+    
+            <div class="w-100"></div>
+    
+            <div class="col-lg-6 col-xs-12">
+                <div class="d-flex justify-content-center align-items-center">
+    
+                    <div class="p-3">
+                        <img src="./img/noticias/linux.png" alt="img-news">
+                    </div>
+    
+                    <div class="p-2">
+                        <h3>Linux 5.7 ya está disponible</h3>
+                        <p>                      
+                            Linus Torvalds ha anunciado el lanzamiento de Linux 5.7, para todo el mundo. Esta nueva versión de kernel viene repleta
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="d-flex container-fluid justify-content-end pb-2 mt-n2">
+                    <button type="button" class="btn btn-outline-info">Leer mas</button>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-xs-12">
+                <div class="d-flex justify-content-center align-items-center">
+    
+                    <div class="p-3">
+                        <img src="./img/noticias/windows.png" alt="img-news">
+                    </div>
+    
+                    <div class="p-2">
+                        <h3>Microsoft reconoce un grave fallo con la Build KB4592438 que puede afectar a equipos con SSD</h3>
+                        <p>                       
+                            Microsoft reconoce un grave fallo con la Build KB4592438 que puede afectar a equipos con SSD cuando se comprueba el estado del disco duro.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="d-flex container-fluid justify-content-end pb-2 mt-n2">
+                    <button type="button" class="btn btn-outline-info">Leer mas</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <hr>
+<!-- members -->
+<div id="team" class="container-fluid">
+    <div class="row justify-content-center mb-5">
+
+        <div class="col mt-5">
+            <div class="card text-white bg-dark">
+                <div class="d-flex justify-content-center p-2">
+                    <img width="200px" height="300px" src="./img/equipo/carl.jpg" alt="img-team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Carlos Erazo</h5>
+                    <p class="card-text">
+                        <h6>Edad: 27 años</h6>
+                        <h6>Altura: 1.85</h6>
+                        <h6>Ocupacion: Desarrollador</h6>
+                        <h6>Hobbie: Pintar</h6>
+
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mt-5">
+            <div class="card text-white bg-danger">
+                <div class="d-flex justify-content-center p-2">
+                    <img width="200px" height="300px" src="./img/equipo/daryl.jpg" alt="img-team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Daniel Ryan</h5>
+                    <p class="card-text">
+                        <h6>Edad: 30 años</h6>
+                        <h6>Altura: 1.80</h6>
+                        <h6>Ocupacion: Desarrollador</h6>
+                        <h6>Hobbie: Voleyball</h6>
+
+                    </p>
+                </div>
+                <div class="card-footer bg-white">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mt-5">
+            <div class="card border-info text-info">
+                <div class="d-flex justify-content-center p-2">
+                    <img width="200px" height="300px" src="./img/equipo/glenn.jpg" alt="img-team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Juan Torres</h5>
+                    <p class="card-text">
+                        <h6>Edad: 24 años</h6>
+                        <h6>Altura: 1.60</h6>
+                        <h6>Ocupacion: Desarrollador</h6>
+                        <h6>Hobbie: ciclismo</h6>
+
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mt-5">
+            <div class="card text-white bg-danger">
+                <div class="d-flex justify-content-center p-2">
+                    <img width="200px" height="300px" src="./img/equipo/marggie.jpg" alt="img-team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Maria Nieves</h5>
+                    <p class="card-text">
+                        <h6>Edad: 22 años</h6>
+                        <h6>Altura: 1.70</h6>
+                        <h6>Ocupacion: Desarrollador</h6>
+                        <h6>Hobbie: Dibujar</h6>
+
+                    </p>
+                </div>
+                <div class="card-footer bg-white">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mt-5">
+            <div class="card text-white bg-dark">
+                <div class="d-flex justify-content-center p-2">
+                    <img width="200px" height="300px" src="./img/equipo/rick.jpg" alt="img-team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">David Mora</h5>
+                    <p class="card-text">
+                        <h6>Edad: 19 años</h6>
+                        <h6>Altura: 1.70</h6>
+                        <h6>Ocupacion: Desarrollador</h6>
+                        <h6>Hobbie: Futbol</h6>
+
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer bg-secondary text-white pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row  align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0">
+
+                <!-- Content -->
+                <h5 class="text-uppercase font-weight-bold ml-5">Sprint 2</h5>
+                <p class="ml-5">sitio web responsive diseñado con estilos de bootstrap</p>
+                <div class="ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-instagram m-3" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+
+                <!-- Content -->
+                <h3>contactenos</h3>
+                <div class="mr-5">
+                    <div class="mb-3 mr-5">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 mr-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-1 bg-dark">© 2020 Copyright: DAD
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
