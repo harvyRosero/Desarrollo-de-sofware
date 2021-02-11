@@ -11,8 +11,8 @@
 
     <ul class="list-group">
         <li class="list-group-item"><span>Nombre: </span> {{ user.nombre }} </li>
-        <li class="list-group-item"><span>Nombre: </span> {{ user.email }} </li>
-        <li class="list-group-item"><span>Nombre: </span> {{ user.rol }} </li>
+        <li class="list-group-item"><span>Email: </span> {{ user.email }} </li>
+        <li class="list-group-item"><span>Rol: </span> {{ user.rol }} </li>
     </ul>
     </div>
 </template>
